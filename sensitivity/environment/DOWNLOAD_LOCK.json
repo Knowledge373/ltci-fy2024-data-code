@@ -1,0 +1,163 @@
+{
+  "platform": "Debian13 amd64",
+  "core_pinned_versions": {
+    "R": "4.6.1",
+    "stats": "4.6.1",
+    "fwildclusterboot": "0.14.3",
+    "fwildclusterboot_commit": "336bb574eba169ac0183317f01d0564791d8122f",
+    "dqrng": "0.4.1"
+  },
+  "other_packages": "Auxiliary versions are pinned to the reconstruction environment; historical auxiliary versions were not separately captured.",
+  "downloads": [
+    {
+      "relative_path": "gfortran-14-x86-64-linux-gnu.deb",
+      "bytes": 11702288,
+      "sha256": "520b3283edc193b75644d655654834662f56f9006a78751d91feb882b74ca684",
+      "official_source_url": "https://deb.debian.org/debian/pool/main/g/gcc-14/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb"
+    },
+    {
+      "relative_path": "libblas-dev.deb",
+      "bytes": 169684,
+      "sha256": "14c7a43c849ddca01f5650983c431be943daa28389e03c59884e827cb8d8cf34",
+      "official_source_url": "https://deb.debian.org/debian/pool/main/l/lapack/libblas-dev_3.12.1-6_amd64.deb"
+    },
+    {
+      "relative_path": "libgfortran-14-dev.deb",
+      "bytes": 879856,
+      "sha256": "8460dfd941d9f60e92516e5c4e3f8bb08e60983e7526f376a7c87969a8a2dbfb",
+      "official_source_url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgfortran-14-dev_14.2.0-19_amd64.deb"
+    },
+    {
+      "relative_path": "liblapack-dev.deb",
+      "bytes": 4990812,
+      "sha256": "1ba8db2690012d7526b8d842b0c97839a94570647772971cbd3d18fe7443957c",
+      "official_source_url": "https://deb.debian.org/debian/pool/main/l/lapack/liblapack-dev_3.12.1-6_amd64.deb"
+    },
+    {
+      "relative_path": "packages/BH_1.90.0-1.tar.gz",
+      "bytes": 14307014,
+      "sha256": "2e1fafb05938e81073561ae4892dc543ef15807e375e0ea8fa75e3ab79f0281b",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/BH_1.90.0-1.tar.gz"
+    },
+    {
+      "relative_path": "packages/Formula_1.2-6.tar.gz",
+      "bytes": 47339,
+      "sha256": "7e611ac371c045e100a6205d92fe5104001942673798f970290fea12e33bfd37",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/Formula_1.2-6.tar.gz"
+    },
+    {
+      "relative_path": "packages/JuliaConnectoR_1.1.6.tar.gz",
+      "bytes": 89500,
+      "sha256": "0cdb445eb85b3a2089cc2b6c033fae9de116575c252ef4020a758c6c948c81f1",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/JuliaConnectoR_1.1.6.tar.gz"
+    },
+    {
+      "relative_path": "packages/MASS_7.3-66.tar.gz",
+      "bytes": 510345,
+      "sha256": "59c619c70bfca653f1c74aef880e69405daefd0134e716a1862ecc5334b4e155",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/MASS_7.3-66.tar.gz"
+    },
+    {
+      "relative_path": "packages/Matrix_1.7-6.tar.gz",
+      "bytes": 2527103,
+      "sha256": "694239dbe47e659d6d39a49af95157f46bd94977c283df00c4e8a016601cf143",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/Matrix_1.7-6.tar.gz"
+    },
+    {
+      "relative_path": "packages/RcppArmadillo_15.6.2-1.tar.gz",
+      "bytes": 1097105,
+      "sha256": "66fb2b707e237e1086b4f39111a172794f43a8bb815c1b589363d2219d61368d",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/RcppArmadillo_15.6.2-1.tar.gz"
+    },
+    {
+      "relative_path": "packages/RcppEigen_0.3.4.0.2.tar.gz",
+      "bytes": 1761745,
+      "sha256": "ecad7ba2129fd48b7ebb825558d38492ed1f3a8934959e27fcd6688175e542bb",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/RcppEigen_0.3.4.0.2.tar.gz"
+    },
+    {
+      "relative_path": "packages/Rcpp_1.1.2.tar.gz",
+      "bytes": 1892159,
+      "sha256": "2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/Rcpp_1.1.2.tar.gz"
+    },
+    {
+      "relative_path": "packages/cli_3.6.6.tar.gz",
+      "bytes": 644134,
+      "sha256": "b2b58d6dd82f5798b335e39c00591686a01fd3e94399ef898e146173e36f18f9",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/cli_3.6.6.tar.gz"
+    },
+    {
+      "relative_path": "packages/collapse_2.1.8.tar.gz",
+      "bytes": 1482443,
+      "sha256": "13fd523cadfa0541b42e805da825a8c882af35ec3da1df0decf96a72488acffd",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/collapse_2.1.8.tar.gz"
+    },
+    {
+      "relative_path": "packages/dqrng_0.4.1.tar.gz",
+      "bytes": 267023,
+      "sha256": "3d9df935020c3c2538bc712456079925c4b379d67407c83fbc008340e353288f",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/dqrng_0.4.1.tar.gz"
+    },
+    {
+      "relative_path": "packages/dreamerr_1.5.0.tar.gz",
+      "bytes": 1130028,
+      "sha256": "590b609009bac8d04ad363b0c067806f5c13870aaef2b42aa8764f74e2040178",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/dreamerr_1.5.0.tar.gz"
+    },
+    {
+      "relative_path": "packages/fwildclusterboot_0.14.3_336bb574.tar.gz",
+      "bytes": 814026,
+      "sha256": "faa34f8471e4f6cf24c3fb87583eb8e3c0083fddd0212fa18924e2d2c44a9981",
+      "official_source_url": "https://codeload.github.com/s3alfisc/fwildclusterboot/tar.gz/336bb574eba169ac0183317f01d0564791d8122f"
+    },
+    {
+      "relative_path": "packages/generics_0.1.4.tar.gz",
+      "bytes": 47224,
+      "sha256": "bbe95a097792d38fc3b7e677738af1b95b66ea5e5017e33b8beac6a6088d0801",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/generics_0.1.4.tar.gz"
+    },
+    {
+      "relative_path": "packages/gtools_3.9.5.tar.gz",
+      "bytes": 242029,
+      "sha256": "dee9b6c1152db1a5dc427d074b32bbbb738708683f17a95e0e95e4d79fdf174b",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/gtools_3.9.5.tar.gz"
+    },
+    {
+      "relative_path": "packages/lattice_0.23-1.tar.gz",
+      "bytes": 682686,
+      "sha256": "34e9b2fc023582c4246959b543c331233c62118efd922bcc1ba72b4888adc590",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/lattice_0.23-1.tar.gz"
+    },
+    {
+      "relative_path": "packages/rlang_1.3.0.tar.gz",
+      "bytes": 784080,
+      "sha256": "80aa537d49e72265f443a15e8936128af583caa5e572086518b503cbf064279c",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/rlang_1.3.0.tar.gz"
+    },
+    {
+      "relative_path": "packages/sitmo_2.0.2.tar.gz",
+      "bytes": 132964,
+      "sha256": "448ef8d56e36783354011845daf33f1efb83ea3b9685eea75eaf5134e24fa8c2",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/sitmo_2.0.2.tar.gz"
+    },
+    {
+      "relative_path": "packages/stringmagic_1.3.0.tar.gz",
+      "bytes": 3363842,
+      "sha256": "9584824bc4868eb659e588960c35305848cf9c907f308a69ca46e22e75f98c49",
+      "official_source_url": "https://stat.ethz.ch/CRAN/src/contrib/stringmagic_1.3.0.tar.gz"
+    },
+    {
+      "relative_path": "packages/summclust_0.7.2.tar.gz",
+      "bytes": 76158,
+      "sha256": "78f39eeee1d88b9c141c43cfd6dae9f506adc5f0243130afb50ed15157d9bfb1",
+      "official_source_url": "https://cran.r-project.org/src/contrib/Archive/summclust/summclust_0.7.2.tar.gz"
+    },
+    {
+      "relative_path": "r-base-core.deb",
+      "bytes": 29861020,
+      "sha256": "c3bb94c7eee11a51f82fd52e34c6534435bae3e46b444e4f629c015df8be545a",
+      "official_source_url": "https://stat.ethz.ch/CRAN/bin/linux/debian/trixie-cran46/r-base-core_4.6.1-1~trixiecran.0_amd64.deb"
+    }
+  ]
+}

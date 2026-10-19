@@ -1,0 +1,125 @@
+{
+  "contrast": "P1",
+  "analysis_contrast_id": "P1_six_no_minus_yes",
+  "support_caliper": "0.5",
+  "n": 19,
+  "G": 5,
+  "n_D1": 8,
+  "n_D0": 11,
+  "columns": [
+    "intercept",
+    "D",
+    "income_low3_share",
+    "age_75_84_share",
+    "age_85plus_share",
+    "ln_insured_end_fy_count",
+    "pref_fe02",
+    "pref_fe03",
+    "pref_fe04",
+    "pref_fe05"
+  ],
+  "memory_fingerprints": {
+    "encoding": "little-endian IEEE754 float64 C-order",
+    "X_sha256": "ac811f5313846051ec956726236c70b46a0df5252232c5a72f883a5bb75c61db",
+    "y_sha256": "5017cc3cf7f819b318e0bbc36eaee8a3cd22b99cf452b977e326503b955a46e6",
+    "cluster_int32_sha256": "c81308c30c4ec3a67b17f3e007d15d11c27d336082a9c9a413e27eaf89a37d8a",
+    "stdin_csv_sha256": "529883a9132b7f0545ada55493b36897e2321dd064cf9410148c52cf4fc2fff0"
+  },
+  "source_references": [
+    {
+      "ID": "insref-0002",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0082",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0137",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0141",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0154",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0374",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0392",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0393",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0395",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0401",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0408",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0411",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0768",
+      "D": 0,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0777",
+      "D": 1,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-1181",
+      "D": 1,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-1201",
+      "D": 0,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-1543",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1546",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1575",
+      "D": 1,
+      "prefecture_code": 5
+    }
+  ]
+}

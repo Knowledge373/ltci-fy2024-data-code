@@ -1,0 +1,34 @@
+[
+  {
+    "Package": "gfortran-14-x86-64-linux-gnu",
+    "Version": "14.2.0-19",
+    "Architecture": "amd64",
+    "Filename": "pool/main/g/gcc-14/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb",
+    "Size": "11702288",
+    "SHA256": "520b3283edc193b75644d655654834662f56f9006a78751d91feb882b74ca684"
+  },
+  {
+    "Package": "libgfortran-14-dev",
+    "Version": "14.2.0-19",
+    "Architecture": "amd64",
+    "Filename": "pool/main/g/gcc-14/libgfortran-14-dev_14.2.0-19_amd64.deb",
+    "Size": "879856",
+    "SHA256": "8460dfd941d9f60e92516e5c4e3f8bb08e60983e7526f376a7c87969a8a2dbfb"
+  },
+  {
+    "Package": "libblas-dev",
+    "Version": "3.12.1-6",
+    "Architecture": "amd64",
+    "Filename": "pool/main/l/lapack/libblas-dev_3.12.1-6_amd64.deb",
+    "Size": "169684",
+    "SHA256": "14c7a43c849ddca01f5650983c431be943daa28389e03c59884e827cb8d8cf34"
+  },
+  {
+    "Package": "liblapack-dev",
+    "Version": "3.12.1-6",
+    "Architecture": "amd64",
+    "Filename": "pool/main/l/lapack/liblapack-dev_3.12.1-6_amd64.deb",
+    "Size": "4990812",
+    "SHA256": "1ba8db2690012d7526b8d842b0c97839a94570647772971cbd3d18fe7443957c"
+  }
+]

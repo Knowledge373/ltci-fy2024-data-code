@@ -1,0 +1,16 @@
+﻿column,storage_or_unit,definition_ja,source_and_caveat_ja
+insref_id,text,研究内のFY2024保険者照合キー。insref-0001等。公式保険者番号ではなく、人を識別するIDでもない。,B0とアウトカム索引・制度資料・背景参照の完全一致キー。年度間の同一団体は保証しない。
+fiscal_year,integer,2024。対象年度を示す定数。,全行2024。
+prefecture_code,two-digit text,都道府県の標準順序01–47。01は北海道。,prefecture_codes.csv。県固定効果・県クラスタの単位。
+annual_installments,integer,現年度・定例・普通徴収の年間通常納期回数。カテゴリ3–12。,A102の年間回数。12月別期数の合計と照合済み。
+provisional_none,integer 0/1,研究採用分類の仮算定なし=1、あり=0。,既存採用分類を保持。初回月だけから今回再分類していない。
+collection_ratio_fraction,decimal text / numeric fraction,現年度普通徴収収納率。0–1尺度。100倍すると％。,B0 collection_ratio_recomputed_fractionの保存済み十進文字列。14h!J/Iに対応。
+income_low3_share,float64 round-trip decimal,標準所得段階第1–3段階の報告人数割合。0–1尺度。,17h!(C+D+E)/BF。所得段階集計対象者の構成で、普通徴収者だけではない。
+age_75_84_share,float64 round-trip decimal,年度末第1号被保険者の75–84歳割合。0–1尺度。,02h!E/C。2025年3月31日現在。普通徴収者だけではない。
+age_85plus_share,float64 round-trip decimal,年度末第1号被保険者の85歳以上割合。0–1尺度。,02h!F/C。2025年3月31日現在。普通徴収者だけではない。
+ln_insured_end_fy_count,float64 round-trip decimal,年度末第1号被保険者数の自然対数。人数そのものではない。,ln(02h!C)。源値で高精度算出後に実モデルへ入力したfloat64値を保持。
+insured_count_end_of_fiscal_year,integer / persons,年度末（2025-03-31）の介護保険第1号被保険者全体。普通徴収者数ではない。,B0 insured_count_end_of_fiscal_year。元02h Cセルとも全件照合。
+ordinary_current_assessment_yen,integer / yen,現年度普通徴収の調定額累計。,B0 assessment_yenをそのまま保持。14h Iのreader十進値×1000と厳密一致。
+ordinary_current_collected_yen,integer / yen,現年度普通徴収の収納額累計。,B0 collection_yenをそのまま保持。14h Jのreader十進値×1000と厳密一致。
+special_current_assessment_yen,integer / yen,現年度特別徴収の調定額累計。原表の真のゼロを保持。,保存原本14h C。binary64 readerの往復可能十進表現をDecimal化して1000倍。XML字句との差は別監査。
+total_current_assessment_yen,integer / yen; derived,現年度特別徴収＋現年度普通徴収の調定額。,special_current_assessment_yen + ordinary_current_assessment_yen。14h C+Iの導出小計。滞納繰越を含むU列ではない。

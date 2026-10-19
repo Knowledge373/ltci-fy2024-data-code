@@ -1,0 +1,77 @@
+{
+  "canonicalization": "SHA256 of UTF-8 json.dumps(sorted(ID_list),ensure_ascii=False,separators=(comma,colon)); no terminal newline",
+  "sets": [
+    {
+      "analysis_contrast_id": "P1_six_no_minus_yes",
+      "source_contrast_id": "C1_six",
+      "caliper": "1",
+      "D1_source_group": "A",
+      "D0_source_group": "B",
+      "source_group_A_IDs_sha256": "567fb940b3b35b712e7575c4c78761366a3ae6741e200a88458ff3a85c8c627d",
+      "source_group_B_IDs_sha256": "357de3039d0bbf0a24445d30940b536372b4d32ec5f86074f63b2d7e545132f0",
+      "D1_IDs_sha256": "567fb940b3b35b712e7575c4c78761366a3ae6741e200a88458ff3a85c8c627d",
+      "D0_IDs_sha256": "357de3039d0bbf0a24445d30940b536372b4d32ec5f86074f63b2d7e545132f0",
+      "T_IDs_sha256": "bbe4d226825c6d53840251898cac6fe33d70fded8ba2741e7c7625b4e95ea974"
+    },
+    {
+      "analysis_contrast_id": "P1_six_no_minus_yes",
+      "source_contrast_id": "C1_six",
+      "caliper": "0.5",
+      "D1_source_group": "A",
+      "D0_source_group": "B",
+      "source_group_A_IDs_sha256": "d01b4a54e08909f6dd33d1a1f3e4e862790a718ea9178f0a5bab789ec339300a",
+      "source_group_B_IDs_sha256": "34e77a49435e2ce6724755937165e1c490f6723e3b3a7202bce890ab41207d2c",
+      "D1_IDs_sha256": "d01b4a54e08909f6dd33d1a1f3e4e862790a718ea9178f0a5bab789ec339300a",
+      "D0_IDs_sha256": "34e77a49435e2ce6724755937165e1c490f6723e3b3a7202bce890ab41207d2c",
+      "T_IDs_sha256": "661db6d4df44dd73ec9bc933c708af1a574df3ab9f98adb770749e313f5b5145"
+    },
+    {
+      "analysis_contrast_id": "P2_july_8_minus_9",
+      "source_contrast_id": "C2_july_8vs9",
+      "caliper": "1",
+      "D1_source_group": "A",
+      "D0_source_group": "B",
+      "source_group_A_IDs_sha256": "a06bc31105190b461606a851f9d904873d3b9671785f1fb79eba2fcd7c0a73c7",
+      "source_group_B_IDs_sha256": "199f4baa26981c8313da5484211f5c45972599da2e785c23118c50197d3da1eb",
+      "D1_IDs_sha256": "a06bc31105190b461606a851f9d904873d3b9671785f1fb79eba2fcd7c0a73c7",
+      "D0_IDs_sha256": "199f4baa26981c8313da5484211f5c45972599da2e785c23118c50197d3da1eb",
+      "T_IDs_sha256": "c5bdc99648592bf56c191abb353b7c1f41d28ff136f6aaed88175b3f591034b4"
+    },
+    {
+      "analysis_contrast_id": "P2_july_8_minus_9",
+      "source_contrast_id": "C2_july_8vs9",
+      "caliper": "0.5",
+      "D1_source_group": "A",
+      "D0_source_group": "B",
+      "source_group_A_IDs_sha256": "b498740ffaa73c0e1d8b9a9eb8f6834f7e2315a6e3da01095017bdb27e45bff7",
+      "source_group_B_IDs_sha256": "459c9dc2654ea4d2df6875253c41fc1e24e949c5079875eb54e8de5dae810f5b",
+      "D1_IDs_sha256": "b498740ffaa73c0e1d8b9a9eb8f6834f7e2315a6e3da01095017bdb27e45bff7",
+      "D0_IDs_sha256": "459c9dc2654ea4d2df6875253c41fc1e24e949c5079875eb54e8de5dae810f5b",
+      "T_IDs_sha256": "69ff3d4aea4544d91796fc817c55161b83af3ec03ce40857c4b895bb954250f7"
+    },
+    {
+      "analysis_contrast_id": "P3_yes6_minus_yes12",
+      "source_contrast_id": "C4_yes12_vs_yes6",
+      "caliper": "1",
+      "D1_source_group": "B",
+      "D0_source_group": "A",
+      "source_group_A_IDs_sha256": "590e09f28b7bfe3612647d78066d0c6932081e691f203c85baac3192b03411d3",
+      "source_group_B_IDs_sha256": "777671794a35d93eb3fcbc90ea305fcc4e52cfb8d229685c6e094a760390840b",
+      "D1_IDs_sha256": "777671794a35d93eb3fcbc90ea305fcc4e52cfb8d229685c6e094a760390840b",
+      "D0_IDs_sha256": "590e09f28b7bfe3612647d78066d0c6932081e691f203c85baac3192b03411d3",
+      "T_IDs_sha256": "e740423b04029a9a5f1b12f1577a3544a1b6752eeb3a728b6f6cabb0b7db1175"
+    },
+    {
+      "analysis_contrast_id": "P3_yes6_minus_yes12",
+      "source_contrast_id": "C4_yes12_vs_yes6",
+      "caliper": "0.5",
+      "D1_source_group": "B",
+      "D0_source_group": "A",
+      "source_group_A_IDs_sha256": "dfd166fde684246cc712720e5d2197480ebea3198f102df8364691b2a1e12fda",
+      "source_group_B_IDs_sha256": "6963546b2f6dd0641acb3a4e6f2ecff970484506e66148e409ef01a47e9e2eee",
+      "D1_IDs_sha256": "6963546b2f6dd0641acb3a4e6f2ecff970484506e66148e409ef01a47e9e2eee",
+      "D0_IDs_sha256": "dfd166fde684246cc712720e5d2197480ebea3198f102df8364691b2a1e12fda",
+      "T_IDs_sha256": "8cf904e8e728c7dc86cdb71fd98ac6bf075ad6f0273b8fcef1acd4dfe6816078"
+    }
+  ]
+}

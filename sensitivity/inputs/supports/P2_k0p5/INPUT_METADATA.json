@@ -1,0 +1,597 @@
+{
+  "contrast": "P2",
+  "analysis_contrast_id": "P2_july_8_minus_9",
+  "support_caliper": "0.5",
+  "n": 111,
+  "G": 17,
+  "n_D1": 68,
+  "n_D0": 43,
+  "columns": [
+    "intercept",
+    "D",
+    "income_low3_share",
+    "age_75_84_share",
+    "age_85plus_share",
+    "ln_insured_end_fy_count",
+    "pref_fe02",
+    "pref_fe03",
+    "pref_fe04",
+    "pref_fe05",
+    "pref_fe06",
+    "pref_fe07",
+    "pref_fe08",
+    "pref_fe09",
+    "pref_fe10",
+    "pref_fe11",
+    "pref_fe12",
+    "pref_fe13",
+    "pref_fe14",
+    "pref_fe15",
+    "pref_fe16",
+    "pref_fe17"
+  ],
+  "memory_fingerprints": {
+    "encoding": "little-endian IEEE754 float64 C-order",
+    "X_sha256": "f4eeb65d67217fb40cd9a37f080947ab4301413b4acb5e3f74042c102a452d94",
+    "y_sha256": "21948561d2d355350be052af8f96ad317817951bbd8774ad164200cc0717d23f",
+    "cluster_int32_sha256": "e1a9af635379c5d04c9cce4871317104a6429c858e76266b89241b5eb7073312",
+    "stdin_csv_sha256": "b9d969d9ca0c22a884129afc76afcc22e79a04fcf64b1445f47f15adb48549c5"
+  },
+  "source_references": [
+    {
+      "ID": "insref-0008",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0016",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0020",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0034",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0039",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0041",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0054",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0087",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0091",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0095",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0111",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0121",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0123",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0124",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0128",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0148",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0152",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0168",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0172",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0178",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0180",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0182",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0190",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0192",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0274",
+      "D": 1,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0277",
+      "D": 0,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0290",
+      "D": 1,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-0293",
+      "D": 0,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-0302",
+      "D": 1,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-0312",
+      "D": 1,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-0315",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-0317",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-0345",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-0360",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-0368",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-0370",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-0443",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0449",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0452",
+      "D": 0,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0456",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0457",
+      "D": 0,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0459",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0462",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0464",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0466",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0472",
+      "D": 0,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0475",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0477",
+      "D": 0,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-0480",
+      "D": 0,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0482",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0487",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0493",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0494",
+      "D": 0,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0497",
+      "D": 0,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0504",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0505",
+      "D": 0,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0508",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0512",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0514",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0517",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0521",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0531",
+      "D": 0,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0535",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0537",
+      "D": 1,
+      "prefecture_code": 7
+    },
+    {
+      "ID": "insref-0558",
+      "D": 0,
+      "prefecture_code": 8
+    },
+    {
+      "ID": "insref-0559",
+      "D": 1,
+      "prefecture_code": 8
+    },
+    {
+      "ID": "insref-0594",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0596",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0614",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0617",
+      "D": 0,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0620",
+      "D": 0,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0626",
+      "D": 0,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0627",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0628",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0632",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0635",
+      "D": 0,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0638",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0641",
+      "D": 0,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0644",
+      "D": 0,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0647",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0650",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0651",
+      "D": 1,
+      "prefecture_code": 9
+    },
+    {
+      "ID": "insref-0771",
+      "D": 0,
+      "prefecture_code": 10
+    },
+    {
+      "ID": "insref-0789",
+      "D": 1,
+      "prefecture_code": 10
+    },
+    {
+      "ID": "insref-0892",
+      "D": 1,
+      "prefecture_code": 11
+    },
+    {
+      "ID": "insref-0900",
+      "D": 0,
+      "prefecture_code": 11
+    },
+    {
+      "ID": "insref-0915",
+      "D": 0,
+      "prefecture_code": 11
+    },
+    {
+      "ID": "insref-0923",
+      "D": 1,
+      "prefecture_code": 11
+    },
+    {
+      "ID": "insref-0938",
+      "D": 0,
+      "prefecture_code": 12
+    },
+    {
+      "ID": "insref-0952",
+      "D": 0,
+      "prefecture_code": 12
+    },
+    {
+      "ID": "insref-0953",
+      "D": 1,
+      "prefecture_code": 12
+    },
+    {
+      "ID": "insref-0963",
+      "D": 1,
+      "prefecture_code": 12
+    },
+    {
+      "ID": "insref-1093",
+      "D": 1,
+      "prefecture_code": 13
+    },
+    {
+      "ID": "insref-1134",
+      "D": 0,
+      "prefecture_code": 13
+    },
+    {
+      "ID": "insref-1260",
+      "D": 1,
+      "prefecture_code": 14
+    },
+    {
+      "ID": "insref-1262",
+      "D": 0,
+      "prefecture_code": 14
+    },
+    {
+      "ID": "insref-1269",
+      "D": 1,
+      "prefecture_code": 14
+    },
+    {
+      "ID": "insref-1270",
+      "D": 0,
+      "prefecture_code": 14
+    },
+    {
+      "ID": "insref-1344",
+      "D": 1,
+      "prefecture_code": 15
+    },
+    {
+      "ID": "insref-1353",
+      "D": 0,
+      "prefecture_code": 15
+    },
+    {
+      "ID": "insref-1364",
+      "D": 0,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1368",
+      "D": 0,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1371",
+      "D": 1,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1372",
+      "D": 1,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1379",
+      "D": 1,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1387",
+      "D": 1,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1389",
+      "D": 1,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1390",
+      "D": 0,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1392",
+      "D": 0,
+      "prefecture_code": 16
+    },
+    {
+      "ID": "insref-1406",
+      "D": 1,
+      "prefecture_code": 17
+    },
+    {
+      "ID": "insref-1413",
+      "D": 0,
+      "prefecture_code": 17
+    }
+  ]
+}

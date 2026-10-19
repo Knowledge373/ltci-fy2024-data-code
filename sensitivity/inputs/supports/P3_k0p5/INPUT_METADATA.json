@@ -1,0 +1,196 @@
+{
+  "contrast": "P3",
+  "analysis_contrast_id": "P3_yes6_minus_yes12",
+  "support_caliper": "0.5",
+  "n": 33,
+  "G": 6,
+  "n_D1": 18,
+  "n_D0": 15,
+  "columns": [
+    "intercept",
+    "D",
+    "income_low3_share",
+    "age_75_84_share",
+    "age_85plus_share",
+    "ln_insured_end_fy_count",
+    "pref_fe02",
+    "pref_fe03",
+    "pref_fe04",
+    "pref_fe05",
+    "pref_fe06"
+  ],
+  "memory_fingerprints": {
+    "encoding": "little-endian IEEE754 float64 C-order",
+    "X_sha256": "6744b914fbcab9613c7d9682fd3570774358e6ddd92ecc1a43021a0a4c6cd5d9",
+    "y_sha256": "682e7a21c8f0b7b6310c24bf794edda0829c58c4b5dcf34104a563a0a1cec61e",
+    "cluster_int32_sha256": "7cd218519b913b293faad35a82e2d72895975912cd90f8f43165ce774a273ea8",
+    "stdin_csv_sha256": "ad537065a01e29cbf9cbf0cdab009a7fdad1465c85d2ee530be97084c966b29c"
+  },
+  "source_references": [
+    {
+      "ID": "insref-0231",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0237",
+      "D": 1,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0244",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0249",
+      "D": 0,
+      "prefecture_code": 1
+    },
+    {
+      "ID": "insref-0865",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0873",
+      "D": 0,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0884",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0890",
+      "D": 1,
+      "prefecture_code": 2
+    },
+    {
+      "ID": "insref-0941",
+      "D": 0,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0945",
+      "D": 1,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0956",
+      "D": 1,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0958",
+      "D": 0,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-0966",
+      "D": 0,
+      "prefecture_code": 3
+    },
+    {
+      "ID": "insref-1102",
+      "D": 1,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-1104",
+      "D": 1,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-1108",
+      "D": 0,
+      "prefecture_code": 4
+    },
+    {
+      "ID": "insref-1448",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1453",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1454",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1455",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1459",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1464",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1465",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1473",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1477",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1481",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1482",
+      "D": 0,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1483",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1488",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1491",
+      "D": 1,
+      "prefecture_code": 5
+    },
+    {
+      "ID": "insref-1552",
+      "D": 0,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-1554",
+      "D": 1,
+      "prefecture_code": 6
+    },
+    {
+      "ID": "insref-1572",
+      "D": 1,
+      "prefecture_code": 6
+    }
+  ]
+}
