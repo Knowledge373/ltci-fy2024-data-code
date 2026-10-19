@@ -45,3 +45,7 @@ Rの感度分析を含む全計算：
 https://www.ipss.go.jp/site-ad/index_japanese/shippitsuyouryou.pdf
 
 公開しただけで投稿条件への適合が認定されるわけではありません。研究データ・独自コードへの新しい包括的な利用許諾は設定していません。第三者コード・依存ライブラリの権利とライセンスは THIRD_PARTY_NOTICES.md を参照してください。
+
+## Column names and output interpretation
+
+See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly workbook/CSV correspondence, and [生成出力の読み方](OUTPUT_DICTIONARY_JA.md) for coefficient scales, contrast directions and support-local cluster IDs. The workbook also contains a Japanese reading guide. These guides describe generated files; they do not imply that generated result CSVs are included in this repository.

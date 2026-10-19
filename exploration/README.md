@@ -18,3 +18,7 @@ Each analysis writes newly computed tables and figures under the requested outpu
 path. Results are descriptive or point estimates where specified, not causal
 estimates. Empty institutional cells remain empty. The proxy weight N*A/T is a
 constructed exposure proxy, not an observed ordinary-insured population count.
+
+## Reading coefficient and descriptive outputs
+
+See [生成出力の読み方](../OUTPUT_DICTIONARY_JA.md). In particular, `estimate_pp` is an outcome-scale coefficient per one stored unit of a continuous predictor, not per one percentage-point increase in a share predictor. Monetary outputs use yen and insurer-size outputs use end-of-fiscal-year Type 1 insured counts.
