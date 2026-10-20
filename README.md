@@ -1,15 +1,16 @@
 # FY2024 介護保険料普通徴収：データと計算コード
 
-2024年度の全国1,573保険者を対象とする固定研究入力、月別納期の閲覧用Excel、変数説明、既存解析の実行用コードです。個人の被保険者データは含みません。保険者名を含む行政集計であり、匿名データではありません。
+2024年度の全国1,573保険者を対象とする固定研究入力、月別納期の閲覧用Excel、変数説明、補足根拠台帳、既存解析の実行用コードです。個人の被保険者データは含みません。保険者名を含む行政集計であり、匿名データではありません。
 
 このリポジトリは著者によるデータ・コードの公開資料です。『社会保障研究』の採択や、同誌の正式なweb appendixとしての認定を意味しません。投稿本文・補足原稿・編集履歴・私的な連絡記録は含めません。
 
 ## 最初に見るもの
 
-- data/ のExcel：保険者ごとの月別納期と研究分類を閲覧するための表
+- data/FY2024_1573保険者_月別納期と研究分類_提出候補.xlsx：保険者ごとの月別納期と研究分類を閲覧するための表
 - data/FY2024_月別納期_提出候補.csv：Excelと対応する月別納期。月別収納額ではありません
 - data/common_input_1573.csv：数値計算に使う固定15列の入力。十進表記を維持しています
 - data/analysis_data_dictionary.csv、data/README_JA.md：変数・単位・分類と出典の説明
+- [補足根拠台帳・公開CSV4点](data/evidence/20261020/)：納期確認方法と分類判断の根拠を追跡するための統合更新版
 - PROVENANCE_JA.md：再現できる範囲と限界
 
 ExcelでCSVを上書きすると桁・型が変わることがあります。計算には元のCSVを直接使ってください。研究IDは公的保険者番号ではありません。
@@ -51,3 +52,13 @@ https://www.ipss.go.jp/site-ad/index_japanese/shippitsuyouryou.pdf
 ## Column names and output interpretation
 
 See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly workbook/CSV correspondence, and [生成出力の読み方](OUTPUT_DICTIONARY_JA.md) for coefficient scales, contrast directions and support-local cluster IDs. The workbook also contains a Japanese reading guide. These guides describe generated files; they do not imply that generated result CSVs are included in this repository.
+
+## 2026年10月20日 根拠資料の統合更新
+
+本文 r32・補足資料 r35 に対応する補足根拠台帳の統合更新版（Excel、公開CSV4点、説明）を `data/evidence/20261020/` に追加しました。投稿原稿そのものは公開していません。相馬市・小川村の公開条例写しの版識別と引用照合範囲、姫島村の著者申告による電話確認の位置づけを統合しています。
+
+解析コードと固定分析入力の参照版は [9357842efdb388d267c75f1f35b88fbb1f3fd023](https://github.com/Knowledge373/ltci-fy2024-data-code/tree/9357842efdb388d267c75f1f35b88fbb1f3fd023) です。今回の変更は根拠資料の追加と説明・ハッシュの更新に限り、同参照版の解析コード、固定入力、研究採用分類、初回分析月、採用分析値は変更していません。補足資料の既存計算コードへの固定リンクは、この解析参照版を示します。根拠追加版を特定する場合は、このリポジトリの当該更新コミットを別に指定してください。
+
+台帳は保存根拠の追跡整理であり、全1,573件の原資料を新しく読み直した記録ではありません。条例・公式公表・電話・メールの方法別件数には重複があり、仮算定性質の直接確認数や誤分類数と同一ではありません。個人の被保険者情報、電話・メールの原文、第三者原本は収録していません。詳細と確認限界は台帳の「読み方」および [台帳の説明](data/evidence/20261020/README_PUBLIC.txt) を参照してください。
+
+変更履歴は [CHANGELOG.md](CHANGELOG.md)、配布ファイルのSHA-256は `MANIFEST.sha256` に記載しています。
