@@ -22,3 +22,12 @@
 変数辞書のA102・B0・prefecture_codes.csvは固定入力作成時の保存資料名です。これらの原作業ファイルを同梱するという意味ではありません。実行に必要な研究ID・制度変数・都道府県コード・背景変数はcommon_input_1573.csvに含まれます。
 
 列の対応と尺度は [データの列名と読み方](HEADER_GUIDE_JA.md) にまとめています。閲覧用Excelの「読み方」シートにも月別0/1・仮算定分類・研究IDの説明を収録しています。
+
+## 固定入力CSVとハッシュの対応
+
+`baseline_model_specification.json` の `analysis_csv_sha256` は、[exploration/inputs/baseline/analysis_rows_1573.csv](../exploration/inputs/baseline/analysis_rows_1573.csv)（1,573行・10列）のSHA-256です。`data/common_input_1573.csv`（1,573行・15列）のハッシュではありません。両ファイルは列構成が異なるため、ファイル全体のハッシュも異なります。
+
+- `exploration/inputs/baseline/analysis_rows_1573.csv`：`7e051e3b8a9d2e85c4afd1ec1a41c1b662d799244dd286a8a1aa2a1c5985377b`
+- `data/common_input_1573.csv`：`ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2`
+
+2026年10月20日の保存CSV照合では、行順と研究IDが一致し、共通10列は1,573行すべてで保存文字列まで一致しました。15列版には年度末第1号被保険者数と調定額・収納額の5列が追加されています。公開の `descriptive/run_public.py`、`cr2/run_public.py`、`sensitivity/run_public.py`、`fixed_model_reconstruction/run_reconstruction.py` は15列版のハッシュを検証します。仕様JSONの既存ハッシュと両CSVは変更していません。
