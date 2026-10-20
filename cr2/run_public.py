@@ -3,7 +3,7 @@
 import os
 for k in ['OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS']:os.environ[k]='1'
 from pathlib import Path
-import argparse,csv,hashlib,json,platform
+import argparse,csv,hashlib,json,platform,warnings
 from decimal import Decimal,ROUND_HALF_EVEN
 import numpy as np
 import scipy
@@ -16,7 +16,11 @@ def save(out,name,rr):
  with (out/(name+'.csv')).open('w',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=list(rr[0]));w.writeheader();w.writerows(rr)
 def main():
  p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);a=p.parse_args();out=a.out.resolve();out.mkdir(parents=True,exist_ok=False)
- assert (platform.python_version(),np.__version__,scipy.__version__)==('3.12.14','2.3.5','1.17.0')
+ versions={'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__}
+ (out/'RUNTIME_ENVIRONMENT.json').write_text(json.dumps(versions,indent=2)+'\n')
+ if platform.python_version_tuple()[:2]!=('3','12'):raise RuntimeError('Supported Python series is 3.12')
+ if (np.__version__,scipy.__version__)!=('2.3.5','1.17.0'):raise RuntimeError('Required NumPy/SciPy versions are 2.3.5/1.17.0')
+ if versions['python']!='3.12.14':warnings.warn('Python patch differs from reference 3.12.14; numerical checks remain required.',RuntimeWarning)
  inp=ROOT/'data/common_input_1573.csv';assert hashlib.sha256(inp.read_bytes()).hexdigest()=='ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2'
  with inp.open(encoding='utf-8-sig',newline='') as f:rr=list(csv.DictReader(f))
  spec=json.loads((ROOT/'data/baseline_model_specification.json').read_text());cols=spec['columns'];cov=spec['covariates']

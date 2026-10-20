@@ -5,7 +5,7 @@ for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','VECLIB_M
     os.environ[key] = '1'
 os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 from pathlib import Path
-import argparse,csv,datetime,hashlib,importlib.util,json,platform,sys,traceback
+import argparse,csv,datetime,hashlib,importlib.util,json,platform,sys,traceback,warnings
 from decimal import Decimal,ROUND_HALF_EVEN
 import numpy as np
 from scipy import linalg,stats
@@ -76,7 +76,10 @@ def direct_deletion_fit(keep,T,W,y,label):
     return b,int(t.shape[1])
 
 def main(out):
-    check('runtime_exact',platform.python_version()=='3.12.14' and np.__version__=='2.3.5' and scipy.__version__=='1.17.0')
+    versions={'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__}
+    save(out/'RUNTIME_ENVIRONMENT.json',versions)
+    check('runtime_supported',platform.python_version_tuple()[:2]==('3','12') and np.__version__=='2.3.5' and scipy.__version__=='1.17.0',versions)
+    if versions['python']!='3.12.14':warnings.warn('Python patch differs from reference 3.12.14; numerical checks remain required.',RuntimeWarning)
     fixed={str(p.relative_to(ROOT)):sha(p) for folder in ['inputs','original_algebra','portable_algebra'] for p in (ROOT/folder).rglob('*') if p.is_file()}
     for p in [Path(__file__)]:fixed[str(p.relative_to(ROOT))]=sha(p)
     save(out/'PRE_EXECUTION_FREEZE.json',{'status':'FROZEN_BEFORE_RECONSTRUCTION','utc':now(),'label':LABEL,'hashes':fixed,'versions':{'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__},'all_direct_deletions':True,'high_hat_threshold_invented':False,'original_unrounded_results_recovered':False})

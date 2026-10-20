@@ -18,6 +18,8 @@ ExcelでCSVを上書きすると桁・型が変わることがあります。計
 
 確認環境はLinux（Debian 13）、Python 3.12.14です。Pythonはrequirements.txtの固定版を使います。仮想環境で `python -m pip install -r requirements.txt` を実行してください。Rによるブートストラップまで行う場合は sensitivity/README.md の固定環境も必要です。
 
+Python 3.12.14 は参照・確認環境です。CR2 と固定仕様再構成は Python 3.12 系の別の修正版数でも警告を記録して続行しますが、NumPy 2.3.5・SciPy 1.17.0 の固定版と既存の数値検査は維持します。両モジュールの RUNTIME_ENVIRONMENT.json に実際の版数を記録します。別環境での互換性や末尾桁一致を一律に保証するものではありません。
+
 Python側の全計算：
 
     python run_all.py --out /任意の新規出力先 --scope deterministic
