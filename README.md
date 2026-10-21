@@ -10,7 +10,7 @@
 - data/FY2024_月別納期_提出候補.csv：Excelと対応する月別納期。月別収納額ではありません
 - data/common_input_1573.csv：数値計算に使う固定15列の入力。十進表記を維持しています
 - data/analysis_data_dictionary.csv、data/README_JA.md：変数・単位・分類と出典の説明
-- [補足根拠台帳・公開CSV4点](data/evidence/20261020/)：納期確認方法と分類判断の根拠を追跡するための統合更新版
+- [補足根拠台帳v5・公開CSV6点](data/evidence/20261021/)：保存採用理由、説明訂正、後続公開資料確認を区別する現行版
 - PROVENANCE_JA.md：再現できる範囲と限界
 
 ExcelでCSVを上書きすると桁・型が変わることがあります。計算には元のCSVを直接使ってください。研究IDは公的保険者番号ではありません。
@@ -53,7 +53,9 @@ https://www.ipss.go.jp/site-ad/index_japanese/shippitsuyouryou.pdf
 
 See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly workbook/CSV correspondence, and [生成出力の読み方](OUTPUT_DICTIONARY_JA.md) for coefficient scales, contrast directions and support-local cluster IDs. The workbook also contains a Japanese reading guide. These guides describe generated files; they do not imply that generated result CSVs are included in this repository.
 
-## 2026年10月20日 根拠資料の統合更新
+## 2026年10月20日 根拠資料の統合更新（旧v4の履歴）
+
+以下は旧v4の記録です。現在の根拠説明は [説明訂正版v5](data/evidence/20261021/) を参照してください。対象16件の旧説明を現行の根拠説明としてそのまま使用しないでください。
 
 本文 r36・補足資料 r39 に対応する補足根拠台帳の統合更新版v4（Excel、公開CSV4点、説明）を `data/evidence/20261020/` に収録しています。投稿原稿そのものは公開していません。相馬市・小川村の公開条例写しの版識別と引用照合範囲、姫島村を含む電話4件の確認範囲を著者確認に基づき訂正しています。
 
@@ -68,3 +70,11 @@ See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly wo
 ## 2026年10月21日 固定公開版の全計算確認
 
 実行対象は公開コミット `fd6b5c9b85bab8175b4a81a765ad646a93537bc2` です。同版のコード・固定入力を変更せず、固定環境で `run_all.py --scope all` を新しい出力先へ実行し、Pythonの5モジュール、Rの6つのfractionalモデルと2つの半幅OLS、全1,600境界・800幅のTOSTを完了しました。新しい解析仕様・推定対象を追加したのではなく、既定解析を新たに再実行した確認です。新出力の全境界・全幅・代表48個の表示p値と主要な原稿数値は別途独立照合し、対象範囲内で不一致はありませんでした。環境と確認範囲は [PROVENANCE_JA.md](PROVENANCE_JA.md) を参照してください。
+
+## 2026年10月21日 説明訂正版v5と後続確認表
+
+本文 r37・補足資料 r40 に対応する「普通徴収_補足根拠台帳_v5_20261021.xlsx」、公開CSV6点と説明を [data/evidence/20261021/](data/evidence/20261021/) に収録しています。投稿原稿全文は含めません。旧v4のExcel・CSVは20261020ディレクトリに履歴として保持し、現行の根拠説明とは区別します。
+
+保存された共通肯定要約35件の意味点検を踏まえ、16件の説明48セルを訂正し、「意味点検35件」と「20261021後続確認」の2表を台帳内と同内容CSVに統合しました。内訳は説明訂正12件、限定支持19件、部分支持2件、具体的出所未接続2件であり、12件は誤分類数ではありません。限定支持19件を全原本・当年通常運用の確認済み件数とはしていません。
+
+方法件数は2026年10月20日台帳v4収録範囲の固定集計として256／48等を保持し、今回の後続確認4件は加算していません。江東区の直接説明、千葉市の合理的接続、加賀市の配分性質未解決、佐井村の限定探索未発見を区別します。研究採用分類、月配置、納期回数、判断ルート、解析コード、固定入力、採用分析値は不変です。詳細は [v5の説明](data/evidence/20261021/README_PUBLIC.txt) を参照してください。
