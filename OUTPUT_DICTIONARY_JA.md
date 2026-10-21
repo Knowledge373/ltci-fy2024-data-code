@@ -54,3 +54,17 @@
 生成出力の空欄・NAには、空セル群で平均が定義されない場合、係数が識別できない場合、診断式を適用できない場合などがあります。`support`、`empty_cell`、`undefined_reason`、`D_estimable` 等を併読し、0に一括置換しないでください。公開入力の月列は全て保存値0/1で、欠測補完を表す0ではありません。
 
 `THRESHOLDS.csv` の `tost_status` は固定規則によるPASS／NONPASS／HOLDです。HOLDは計算診断を優先した状態で、他方の境界の公式p値が通過しない場合もあります。HOLDは同等性成立を示すラベルではありません。また、tost_statusは効果の信頼区間ではありません。詳細は [sensitivity/README.md](sensitivity/README.md) を参照してください。
+
+## 6. 追加2対比とS4A対応の保存比較表
+
+専用入口 `contrast_extension/run_cell16_additional_contrasts.py` は旧全体入口とは別です。[専用説明](contrast_extension/README.md)から固定入力・仕様・コードと [保存比較結果](contrast_extension/results/ADDITIVE_CELL16_COMPARISON.csv) を辿れます。保存比較結果は2対比×2モデルの4行であり、全生成結果一式ではありません。
+
+- `contrast`：`B9_cell16` は9回なし−12回あり、`B10_cell16` は10回なし−12回あり。両モデルで比較方向は同じです。
+- `model`：`additive61_legacy_saved` は確定した旧加法結果の転記、`cell16_full66_rebuilt` は今回の16セルモデル新計算。`additive_reestimated=false` を併読します。
+- `estimate_fraction`、`SE_fraction`、`CI_*_fraction` は比率尺度。`*_pp` は100倍、分散の `variance_fraction_squared` は比率二乗です。`df` と `t975` は無次元です。
+- `*_display3`：小数3桁の表示文字列。S4Aの点差・SE・自由度・区間との照合に使い、丸め前の数値で推論します。
+- `source`：実行出力先から見た生成結果名又は専用入口から見た参照結果名です。公開コピーでは `cell16_full66_rebuilt` の行は今回の新計算を表します。
+
+新規生成される `CELL16_ADDITIONAL_TWO_CONTRASTS.csv` の `positive_n`／`negative_n` は保険者数、`positive_prefectures`／`negative_prefectures` は各群が存在する県数、`overlap_prefectures` は両群の共存県数、`positive_overlap_n`／`negative_overlap_n` は共存県内の各群の保険者数です。これらはSatterthwaite自由度、有効クラスタ数又は背景条件の共通支持の指標ではありません。
+
+`contrast_extension/reference/` の2CSVは旧結果の回帰検算・比較転記参照であり、新しい観測データや追加2対比の推定入力ではありません。`results/` の保存比較結果もrunnerの入力にはしません。

@@ -10,7 +10,7 @@
 - data/FY2024_月別納期_提出候補.csv：Excelと対応する月別納期。月別収納額ではありません
 - data/common_input_1573.csv：数値計算に使う固定15列の入力。十進表記を維持しています
 - data/analysis_data_dictionary.csv、data/README_JA.md：変数・単位・分類と出典の説明
-- [補足根拠台帳v6・対応CSV7表](data/evidence/20261021_v6/)：公的資料と著者電話確認の根拠追補を区別する現行版
+- [補足根拠台帳v7・対応CSV9表](data/evidence/20261022_v7/)：研究採用分類と現在の根拠説明を分けた現行版
 - PROVENANCE_JA.md：再現できる範囲と限界
 
 ExcelでCSVを上書きすると桁・型が変わることがあります。計算には元のCSVを直接使ってください。研究IDは公的保険者番号ではありません。
@@ -51,11 +51,11 @@ https://www.ipss.go.jp/site-ad/index_japanese/shippitsuyouryou.pdf
 
 ## Column names and output interpretation
 
-See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly workbook/CSV correspondence, and [生成出力の読み方](OUTPUT_DICTIONARY_JA.md) for coefficient scales, contrast directions and support-local cluster IDs. The workbook also contains a Japanese reading guide. These guides describe generated files; they do not imply that generated result CSVs are included in this repository.
+See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly workbook/CSV correspondence, and [生成出力の読み方](OUTPUT_DICTIONARY_JA.md) for coefficient scales, contrast directions and support-local cluster IDs. The workbook also contains a Japanese reading guide. These guides describe generated files. The limited four-row S4A comparison result is included in contrast_extension/results/; full generated results are not distributed.
 
 ## 2026年10月20日 根拠資料の統合更新（旧v4の履歴）
 
-以下は旧v4の記録です。現在の根拠説明は [根拠追補版v6](data/evidence/20261021_v6/) を参照してください。対象16件の旧説明を現行の根拠説明としてそのまま使用しないでください。
+以下は旧v4の記録です。現在の根拠説明は [分類根拠索引版v7](data/evidence/20261022_v7/) を参照してください。対象16件の旧説明を現行の根拠説明としてそのまま使用しないでください。
 
 本文 r36・補足資料 r39 に対応する補足根拠台帳の統合更新版v4（Excel、公開CSV4点、説明）を `data/evidence/20261020/` に収録しています。投稿原稿そのものは公開していません。相馬市・小川村の公開条例写しの版識別と引用照合範囲、姫島村を含む電話4件の確認範囲を著者確認に基づき訂正しています。
 
@@ -73,7 +73,7 @@ See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly wo
 
 ## 2026年10月21日 説明訂正版v5と後続確認表（旧版の履歴）
 
-以下はv5公開時点の記録です。後続の根拠追補は本ページ末尾のv6を参照してください。
+以下はv5公開時点の記録です。後続の根拠追補は下記のv6（履歴）、現在の分類根拠索引は末尾のv7を参照してください。
 
 本文 r37・補足資料 r40 に対応する「普通徴収_補足根拠台帳_v5_20261021.xlsx」、公開CSV6点と説明を [data/evidence/20261021/](data/evidence/20261021/) に収録しています。投稿原稿全文は含めません。旧v4のExcel・CSVは20261020ディレクトリに履歴として保持し、現行の根拠説明とは区別します。
 
@@ -81,8 +81,16 @@ See [データの列名と読み方](data/HEADER_GUIDE_JA.md) for the monthly wo
 
 方法件数は2026年10月20日台帳v4収録範囲の固定集計として256／48等を保持し、今回の後続確認4件は加算していません。江東区の直接説明、千葉市の合理的接続、加賀市の配分性質未解決、佐井村の限定探索未発見を区別します。研究採用分類、月配置、納期回数、判断ルート、解析コード、固定入力、採用分析値は不変です。詳細は [v5の説明](data/evidence/20261021/README_PUBLIC.txt) を参照してください。
 
-## 2026年10月21日 根拠追補版v6
+## 2026年10月21日 根拠追補版v6（旧版の履歴）
 
 [根拠追補版v6](data/evidence/20261021_v6/) は、本文 r38・補足資料 r41 に対応する台帳新版、「後続根拠追補22件.csv」と説明です。旧v5の6CSVは同一バイトで参照し、新表と合わせて7表に対応します。
 
 追加対象22件の公的資料評価は直接支持1件・合理的な複数資料支持9件・通常初回への接続留保12件です。留保12件には、FY2024の通常普通徴収に仮算定がなく、記録済み納期に問題がないとの著者による電話確認を別列で追補します。方法集計は2026年10月20日固定、研究採用分類・納期回数・月配置・固定入力・解析値は不変です。根拠の区別と対応CSVの所在は [v6の説明](data/evidence/20261021_v6/README_PUBLIC.txt) を参照してください。
+
+## 2026年10月22日：根拠索引v7と固定16セルモデルの追加2対比
+
+[台帳v7の説明](data/evidence/20261022_v7/README_PUBLIC.txt)から、新しい「採用分類と現在根拠」「分類説明と照合規則」へ進めます。旧8シートと既存7CSV、研究採用分類・方法別件数は保持し、1,573件のID・値の機械的接続と43件の個別意味照合を区別します。残る1,530件の今回未整理は、当初未調査や分類未確定を意味しません。
+
+[追加2対比の入口と説明](contrast_extension/README.md)は旧全体入口とは別です。[固定入力](fixed_model_reconstruction/inputs/common_input_1573.csv)から9回なし−12回あり、10回なし−12回ありを計算し、[S4A対応の4行比較結果](contrast_extension/results/ADDITIVE_CELL16_COMPARISON.csv)を収録します。参照2CSVは既存結果の検算・比較転記用で、新たな推定入力ではありません。今回の限定計算は2026年10月22日01:04:44（日本時間）完了で、旧fd6b版の全1,600境界・800幅の実行とは別です。旧 `run_all.py --scope all` に追加2対比は含まれません。新しいbootstrap・TOSTや加法モデルの再推定は行っていません。
+
+旧解析参照版9357842、旧全実行版fd6b5c9、今回の基準公開版634e0a9と新専用入口を区別してください。本文r40・補足r44の全文、個別連絡の原文、実行ログ一式は公開物に含めません。

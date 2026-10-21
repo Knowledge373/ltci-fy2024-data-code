@@ -1,0 +1,488 @@
+{
+  "specification_id": "CELL16_TWO_CONTRAST_EXTENSION_20261022",
+  "scientific_specification_origin": "Fixed exploratory two-contrast specification during manuscript revision; prior results known before the documented new execution.",
+  "status": "FIXED_COMPUTATIONAL_SPECIFICATION_RESULTS_GENERATED_BY_SEPARATE_ENTRY_POINT",
+  "original_B_artifacts_recovered": false,
+  "prior_result_already_known": true,
+  "no_claim_of_new_preregistration": true,
+  "baseline_public_commit": "634e0a9bcde12d912d5a1436d50e611b9790ba68",
+  "baseline_zip_sha256": "88bea041308759117ec7d36db14c9baea10953da3b8661a4eeb3dc95dc9294fd",
+  "frozen_scientific_facts": {
+    "n": 1573,
+    "full_columns": 66,
+    "observed_cells": 16,
+    "background_covariates": [
+      "income_low3_share",
+      "age_75_84_share",
+      "age_85plus_share",
+      "ln_insured_end_fy_count"
+    ],
+    "prefectures": 47,
+    "weights": "equal insurer",
+    "reference_cell": [
+      8,
+      1
+    ],
+    "none_coding": {
+      "none": 1,
+      "yes": 0
+    },
+    "new_contrasts_in_order": [
+      {
+        "id": "B9_cell16",
+        "positive": [
+          9,
+          1
+        ],
+        "negative": [
+          12,
+          0
+        ],
+        "weights_by_zero_based_index": {
+          "11": 1,
+          "15": -1
+        }
+      },
+      {
+        "id": "B10_cell16",
+        "positive": [
+          10,
+          1
+        ],
+        "negative": [
+          12,
+          0
+        ],
+        "weights_by_zero_based_index": {
+          "13": 1,
+          "15": -1
+        }
+      }
+    ],
+    "singleton_cells_retained": [
+      [
+        3,
+        1
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        11,
+        0
+      ]
+    ],
+    "empty_cells_not_added": [
+      [
+        3,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        12,
+        1
+      ]
+    ],
+    "old_four": {
+      "C1": [
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "C2": [
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "C3": [
+        [
+          9,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "C4": [
+        [
+          12,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ]
+    },
+    "h_g": "(c' G_g X_g L)'",
+    "H_full_shape": [
+      66,
+      47
+    ],
+    "H_partial_shape": [
+      16,
+      47
+    ],
+    "P_shape": [
+      47,
+      47
+    ],
+    "OUT_order": "Create new empty output and independent_cell16 child; assign independent.OUT before its first function call. Disable bytecode. Import unchanged modules; never call old main().",
+    "rank_thresholds": [
+      1e-07,
+      1e-09,
+      1e-11
+    ],
+    "ranks": [
+      66,
+      50,
+      16
+    ],
+    "CR2_cutoff": 1e-12,
+    "full_suppressed": 50,
+    "partial_suppressed": 0,
+    "independent_retention_cutoffs": [
+      1e-14,
+      1e-12,
+      1e-10
+    ],
+    "material_negative_eigen_threshold": -1e-10,
+    "comparison_ATOL": 1e-10,
+    "comparison_DF_ATOL": 1e-08,
+    "comparison_RTOL": 1e-08,
+    "comparison_formula": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+    "CI": "Individual multiplicity-unadjusted 95% t interval with contrast-specific Satterthwaite df",
+    "unit": "fraction internally; point/SE/CI multiplied by 100 to pp; df dimensionless; 3 decimals ROUND_HALF_EVEN for display",
+    "row_exclusions": 0,
+    "additive_refit": false,
+    "bootstrap_or_TOST": false,
+    "independent_route": "Existing unchanged residual-projector functions, plus separate QA manual design/SVD/eigen evd/explicit residual projector",
+    "never_technical_HOLD": [
+      "low finite positive df",
+      "wide intervals",
+      "zero crossing",
+      "sign reversal",
+      "divergence from additive",
+      "few overlapping prefectures"
+    ]
+  },
+  "columns": [
+    "intercept",
+    "cell_3_1",
+    "cell_4_0",
+    "cell_4_1",
+    "cell_5_1",
+    "cell_6_0",
+    "cell_6_1",
+    "cell_7_0",
+    "cell_7_1",
+    "cell_8_0",
+    "cell_9_0",
+    "cell_9_1",
+    "cell_10_0",
+    "cell_10_1",
+    "cell_11_0",
+    "cell_12_0",
+    "income_low3_share",
+    "age_75_84_share",
+    "age_85plus_share",
+    "ln_insured_end_fy_count",
+    "prefecture_02",
+    "prefecture_03",
+    "prefecture_04",
+    "prefecture_05",
+    "prefecture_06",
+    "prefecture_07",
+    "prefecture_08",
+    "prefecture_09",
+    "prefecture_10",
+    "prefecture_11",
+    "prefecture_12",
+    "prefecture_13",
+    "prefecture_14",
+    "prefecture_15",
+    "prefecture_16",
+    "prefecture_17",
+    "prefecture_18",
+    "prefecture_19",
+    "prefecture_20",
+    "prefecture_21",
+    "prefecture_22",
+    "prefecture_23",
+    "prefecture_24",
+    "prefecture_25",
+    "prefecture_26",
+    "prefecture_27",
+    "prefecture_28",
+    "prefecture_29",
+    "prefecture_30",
+    "prefecture_31",
+    "prefecture_32",
+    "prefecture_33",
+    "prefecture_34",
+    "prefecture_35",
+    "prefecture_36",
+    "prefecture_37",
+    "prefecture_38",
+    "prefecture_39",
+    "prefecture_40",
+    "prefecture_41",
+    "prefecture_42",
+    "prefecture_43",
+    "prefecture_44",
+    "prefecture_45",
+    "prefecture_46",
+    "prefecture_47"
+  ],
+  "observed_cells": [
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      12,
+      0
+    ]
+  ],
+  "input": "fixed_model_reconstruction/inputs/common_input_1573.csv",
+  "y_hash": "b078ce93f589e269062f8784526e70fb2a26a20ac354382d577b944b5bc98719",
+  "pref_hash": "3ae9f549001855930cff396274e7adfcda7e9a331b84ac2f709b0468d694893c",
+  "new_contrasts": [
+    {
+      "id": "B9_cell16",
+      "positive": [
+        9,
+        1
+      ],
+      "negative": [
+        12,
+        0
+      ],
+      "weights_by_zero_based_index": {
+        "11": 1,
+        "15": -1
+      }
+    },
+    {
+      "id": "B10_cell16",
+      "positive": [
+        10,
+        1
+      ],
+      "negative": [
+        12,
+        0
+      ],
+      "weights_by_zero_based_index": {
+        "13": 1,
+        "15": -1
+      }
+    }
+  ],
+  "legacy_file_hashes": {
+    "THIRD_PARTY_NOTICES.md": "8831bf33326a2a53e19accff15ca19ea7bd2d2164afa4ad9bcf053012fb22cc8",
+    "cr2/core.py": "4ef5799d57a6652e4c39978346a3e6130b1d741773342b013a2e239aa4e87467",
+    "cr2/run_public.py": "9ae4d97032db567d8a593ab772c0fbfdecc2757e1c9f82fe20ad0b8e2118ac06",
+    "data/FY2024_1573保険者_月別納期と研究分類_提出候補.xlsx": "b06e507021d9dd3762e26de367df6138259d859f5944f66b4a8c4a77532a3533",
+    "data/FY2024_月別納期_提出候補.csv": "bc8deb408f5dec743f9fbfd8cb485bfc352b8fd75a4821ca04f32768fad0083e",
+    "data/HEADER_GUIDE_JA.md": "e5150ce31769055cc32dafb1d6dced709b0bdd04d75e5525c5062484a849c4fb",
+    "data/analysis_data_dictionary.csv": "546bc719a26b701cb4c1e32207d788ae00aa1061a55a0ce4bb92b3962fde07d9",
+    "data/baseline_model_specification.json": "206d09d135c9c4cc309dc956ec0ce4b93d6d42516bb1ec45b4e306285c59a585",
+    "data/common_input_1573.csv": "ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2",
+    "data/evidence/20261020/6月初回根拠359_統合更新版.csv": "f37df1afbc7f719a7f19dc519cb62f456b07ff29b8daf7152e0e39d1073eafa1",
+    "data/evidence/20261020/README_PUBLIC.txt": "6fe9fb672e0b31340e3e185211f086e0479812dbef5eb558d00e722fe7a16807",
+    "data/evidence/20261020/普通徴収_補足根拠台帳_20261020.xlsx": "52572eb1af46ec00354efcaa9fbc4efb556c1c74609d61c256fdc07ce55e153e",
+    "data/evidence/20261020/確認方法別件数_統合更新版.csv": "68c4eeea5481c5bea7e25487cf56fbf641167ba493351941e9eef33cf3be55e1",
+    "data/evidence/20261020/納期根拠1573_統合更新版.csv": "c320c98747608205e9e9663c82581519d1fd82d36da4e755a48d38578849a628",
+    "data/evidence/20261020/追加確認追跡13件_統合更新版.csv": "8e50642e3e5a661b661008fecfa381111aa04ffc10479f03d3374822cdf69e49",
+    "data/evidence/20261021/20261021後続確認4件.csv": "f566c3d05249d990d017b68fae27e30e5eb9a4e2ba4a86eb2cf4a686c31ade73",
+    "data/evidence/20261021/6月初回根拠359_統合更新版.csv": "78b4ca185ce2f69f598df963330342eb25e765c13a5881fbb36ebca9d5055e93",
+    "data/evidence/20261021/README_PUBLIC.txt": "03e8191a6f6795ab5d48e2b8ef52a7a837071c2dc8c929308a7bcdc933e73373",
+    "data/evidence/20261021/意味点検35件.csv": "362004c6fdc69c4f1f29e7f91538948ab308da94bfb7874932f89408f35c70ad",
+    "data/evidence/20261021/普通徴収_補足根拠台帳_v5_20261021.xlsx": "572d93a12991cf379b26f2107ff9a3d3d3dfb1ef2b5afb35f0ae41a8a498d592",
+    "data/evidence/20261021/確認方法別件数_統合更新版.csv": "c3c5e027ca69a819d649fdb63496c18a100d249010cb85f0c4939f1a94b31ee7",
+    "data/evidence/20261021/納期根拠1573_統合更新版.csv": "c320c98747608205e9e9663c82581519d1fd82d36da4e755a48d38578849a628",
+    "data/evidence/20261021/追加確認追跡13件_統合更新版.csv": "8e50642e3e5a661b661008fecfa381111aa04ffc10479f03d3374822cdf69e49",
+    "data/evidence/20261021_v6/README_PUBLIC.txt": "34457f1656e89c71e12dbe043da3fd31d7e6ac169f809f486d4675938fbc35ae",
+    "data/evidence/20261021_v6/後続根拠追補22件.csv": "e872ff332e9428f9497d3a6d77b57eab5312fe97f8a8f76efecb57d4d6c7d35f",
+    "data/evidence/20261021_v6/普通徴収_補足根拠台帳_v6_20261021.xlsx": "78709a08bbe6777ac90409fd8c46514fe56e612ba4b50c3376dfc05ba98b7bd1",
+    "descriptive/core.py": "f8654518322c738868a36253f3b52fabfdc70405a4d0ae730ccbc8e0d54ca16a",
+    "descriptive/run_public.py": "2b70f4238d3fbe1ec0ed083ed7c73166d4791344f1f32fc574260fb76653e716",
+    "exploration/README.md": "3e96b6229a0e9dd2d1d8f6dd4d951dedeb6fd8605c47360970b63226db2cba0d",
+    "exploration/external_work/explore.py": "c71b4e866b0ebd5e544b757a01867fd3593860a97b3e7022268b5fffbeb7d304",
+    "exploration/influence_distribution/analyze_distribution_influence.py": "532563f390d19d0b002cd1c96aafbf80573c3769df708cafafc593999155a16e",
+    "exploration/inputs/baseline/analysis_rows_1573.csv": "7e051e3b8a9d2e85c4afd1ec1a41c1b662d799244dd286a8a1aa2a1c5985377b",
+    "exploration/inputs/baseline/fixed_ols_coefficients_all61.csv": "c81e2fd3a8accd836bb7196d1b6a36719acc89dc0bfb6821ff1449e1ac298cd2",
+    "exploration/inputs/baseline/model_specification.json": "0b9a78aac8175d5a3096939b2c010bb1f285cca502653dc571947ed6dfffdc75",
+    "exploration/inputs/common_input_1573.csv": "ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2",
+    "exploration/inputs/input_hashes.json": "24b3219e1863fa8f3d625edd229b757f5f5ddf8fdd76147867101c94cdb35396",
+    "exploration/institution_size/analyze.py": "10bc2951500dfbb952777bf3d83fb73a6b77d5c1fd19983a9aa5a37ca93dd634",
+    "exploration/requirements.txt": "7cc9a7650ef4bf55dd0efdab27183678af5ca6ef6b82fe1bcd83f29900125695",
+    "exploration/run_all.py": "f9572ee4452c61650cce77b083efb4c267f91a6a8bc99e02e67ee14fcf3bcba8",
+    "exploration/weights/analyze_weights.py": "8a539967791fe5d8b5b91ad23534e3efc082fe10b2492f59f3c733077b30c62d",
+    "exploration/weights/annotate_contrast_support.py": "1e720b821c3286d4470b7d1dd76b06a9158e128ca03c2b25283d3d09e6f43140",
+    "fixed_model_reconstruction/inputs/baseline_model_specification.json": "206d09d135c9c4cc309dc956ec0ce4b93d6d42516bb1ec45b4e306285c59a585",
+    "fixed_model_reconstruction/inputs/common_input_1573.csv": "ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2",
+    "fixed_model_reconstruction/portable_algebra/run_independent_projector_qa.py": "554002029544f18b22d7aa4f568c27fc5e6e22c0b6feacdcaabc2fdafd9fc7f7",
+    "fixed_model_reconstruction/portable_algebra/run_two_contrast_cr2.py": "4ef5799d57a6652e4c39978346a3e6130b1d741773342b013a2e239aa4e87467",
+    "fixed_model_reconstruction/run_reconstruction.py": "c5805683b807e8a8bd1d29a9d01a1313a9abe0ba0b65ef1033a05a438b0a7b4d",
+    "requirements.txt": "53346b819134cd5cc2d9bc9dc57075c698b1f869193641b18c6617993bed8117",
+    "run_all.py": "dc32cb4228054e11dc9a47d9c9d6b28b51ef7f8d1d36a3e13f719d5e2b26caad",
+    "sensitivity/README.md": "d458c3d254ff9c9c094499cb06b85bd2b6d7bcbf6713a054c3722592876d58e0",
+    "sensitivity/code/boundary_diagnostics.R": "e0212a40fb25d57b68494986e7565de56cab872bf78d0f89caba481eddebc9ea",
+    "sensitivity/code/fit_points.R": "a0587be79bbbaeb2b987c51bcecc92428d8a649fa63b351e5b79ddcecf16b7f5",
+    "sensitivity/code/reconstruct.py": "63ca7d5260d1756874a4dc6618cdaacbf3dbdcb992ac7d06eeef93d2c0f9b650",
+    "sensitivity/code/run_boundaries_baseline.R": "034650d3f351eb8aa7dcf4ba75d451e6445cbbb22cfe23040f9d5719d550172e",
+    "sensitivity/code/run_boundaries_half.R": "59053d399d5493cf7495bd03988e3edfadfd91068e14b3b4192b8faa1f13c13d",
+    "sensitivity/code/verify_stdin_roundtrip.R": "e87a23be1e979a7b78fe5722a65f3ae171fadc273714b4d448e62e27607dbf95",
+    "sensitivity/environment/DOWNLOAD_LOCK.json": "ed77ca84e503e3e633eb630dbde9c4fd387d98c8c4d60c4fb844e77d9874de42",
+    "sensitivity/environment/Makevars.low-memory": "23f358d1762bb5105823a73e61d8e40a740ee97f0c614b7948f8b7ac6c8ac145",
+    "sensitivity/environment/prepare_runtime.py": "2dffd266a097497ea33cf0696056e9f044b5ea3564a20a41a7d973af4ce313c4",
+    "sensitivity/environment/rebuild_from_preserved_sources.R": "cd89efb912d19eda60ce456faad110743cc4c9e018d26da48bfead34c9d86fc9",
+    "sensitivity/environment/rebuild_runtime.sh": "bcdc044b474e0e2fda9991f4f236aa028f40e1cf4267b94ba82e660f0196fbec",
+    "sensitivity/environment/run-r-local.sh": "9ae8ffcc6c8ba948fe57f1d264eae5b6035368f8bbda9c88750ace0ccd94da0c",
+    "sensitivity/environment/setup_runtime.py": "54286dfbd69a6a78468a19f60396e5dfee886295171e9ea525e9f74792c65253",
+    "sensitivity/environment/toolchain_downloads.json": "651a444347c3ba1a7601ab9805228005b0eea0f535d3b8a50cbee7c786a76976",
+    "sensitivity/environment/verification-source/arg_checks.R": "4ece9337e116b3730dfbd41e3ec401f91ab9d0deb35e84e4f7017145ab6a01c0",
+    "sensitivity/environment/verification-source/boottest_lm.R": "130778d0540fa6a794fa3cdccee32cdc39f51f7523dad083503587cd68cbaed1",
+    "sensitivity/environment/verification-source/get_bootstrap_pvalue.R": "7b0af215dc53bec6a3319ad029bc6d89eb0e0db80fe1079d214c157fb299d45c",
+    "sensitivity/environment/verification-source/get_weights.R": "2766c4463689bec5a4b6531889f13f466dc54ec1d1685b1cdb26def983b31349",
+    "sensitivity/environment/verification-source/p_val_null.R": "8fb395f6dc7a63b74344766e526d2a136fa771a2690f400935116e42dfcd81b4",
+    "sensitivity/inputs/common_input_1573.csv": "ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2",
+    "sensitivity/inputs/supports/P1_k0p5/INPUT_METADATA.json": "ef9dd9473e3fcd115e66481bb94ed21b268d01ca18f2fbb9edf44cb82e76568f",
+    "sensitivity/inputs/supports/P1_k1/INPUT_METADATA.json": "5bcd8bf13492b71975439274a1be391972bea00b882da42e033c3c757b5e59cf",
+    "sensitivity/inputs/supports/P2_k0p5/INPUT_METADATA.json": "3885a69654c9c8cece737195be25cc1ec9c04c27c56deb87d83c734752e6e472",
+    "sensitivity/inputs/supports/P2_k1/INPUT_METADATA.json": "c41ab6b8d61967b1068649a3a1ec71110dd086c5dd7e9d947fda1e9f341d7c29",
+    "sensitivity/inputs/supports/P3_k0p5/INPUT_METADATA.json": "450c8de52faee12f4e93a98c25e741833725059b06b36e8e0e32abbbc5108b38",
+    "sensitivity/inputs/supports/P3_k1/INPUT_METADATA.json": "7f72724aa2444c54cdf617a3f046d4bf002ff86c6a3ca7763ab6b1be9340b00f",
+    "sensitivity/licenses/GPL-2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+    "sensitivity/licenses/GPL-3.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "sensitivity/licenses/NOTICE.md": "dab7cbd6844425d9e4e0c7b6eed5891df88bf71676d6fb529583e6bcbd5fbb94",
+    "sensitivity/licenses/PACKAGE_LICENSES.json": "23352ee1b12b7f4baec0e80f35c0f98b6920fedc3bdfd70e3b3534beee965d3a",
+    "sensitivity/licenses/fwildclusterboot_LICENSE.md": "585e25ef8f5946a52bf2aed68d5becfc38be94a8663aa01c1b31d88aa57f1de3",
+    "sensitivity/licenses/summclust_LICENSE": "6b75542802ca242a9919c12004cac29cffa8ffb9b8155984ae5fac80a9af1da2",
+    "sensitivity/requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "sensitivity/run_public.py": "54cbf21886e0e0350f8235330cea943b43d2b9fbcaeb3683a697e76377bc4562",
+    "sensitivity/support_cluster_code_crosswalk.csv": "4f4de1b989d09adb985417c459ebcc953f91e87bfaac0afac2562dc49bfbed95",
+    "support_selection/README.md": "126b4d8a1aceed669aa79359baa27e8990ea5c4202fced9ebd0282b6036e182a",
+    "support_selection/inputs/INSTITUTIONAL_JOIN_1573.csv": "191795868689fe67f20496e6f62ee6f4919ce9f4bb36526d5674356e2e88347c",
+    "support_selection/inputs/common_input_1573.csv": "ea25bf07ed1ff42626ca73719ca252af7f563ca35cd19029139863cdbca468f2",
+    "support_selection/inputs/input_hashes.json": "790f33e15aa8f082e9b2339f9de783bdd79009c1e85fc12a1324f3dd7d053fcf",
+    "support_selection/inputs/set_hashes.json": "2a5bb665054dc6a0df2ed7228241ff3b184905ee14ff85ecceed7aa30247c4f3",
+    "support_selection/math_early.py": "e8070c059f8d212a7d6e8bf90a608cb7a3c65f864e65f932881a68906f3c6ec5",
+    "support_selection/math_p3.py": "c50dbeee4ce0c536ce652b9ccff4536f9a30619b144f2d99e92f04f7db13b8f1",
+    "support_selection/run_selection.py": "5eaaadd25224fba1769250a7721f1cbf25e42a19fad688a9533e4597d3c5725a"
+  },
+  "reference_hashes": {
+    "CELL16_FOUR_CONFIRMED.csv": "5459dfedd3079996a1431b1e018d5dffdbe5ca5facf126d406daa0f1bbd857ca",
+    "ADDITIVE_TWO_CONFIRMED.csv": "4a86ad415cb8626becf3fa2a8c7fc2f67ddccfe11187815c6ce07f6863a3c39a"
+  },
+  "reference_provenance": "Legacy result CSVs reconstructed from retained precise records and verified against their previously recorded SHA-256 values. The original filesystem copies were not recovered; these are not newly fitted results.",
+  "runtime": {
+    "python_minor": "3.12",
+    "reference_patch": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "patch_mismatch": "Warn, keep mandatory numerical checks."
+  },
+  "unchanged": [
+    "input",
+    "classification",
+    "month",
+    "rows",
+    "weights",
+    "legacy code",
+    "scope all",
+    "TOST",
+    "supports",
+    "additive results",
+    "old four results"
+  ],
+  "not_performed": [
+    "full scope all",
+    "bootstrap",
+    "TOST",
+    "new additive fit",
+    "47 omitted-prefecture rank loop",
+    "47+1573 deletion refits"
+  ],
+  "technical_hold_only": true,
+  "comparison_atol": 1e-10,
+  "comparison_df_atol": 1e-08,
+  "comparison_rtol": 1e-08
+}
